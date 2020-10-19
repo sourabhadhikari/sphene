@@ -17,12 +17,12 @@ export const footer = styled.div`
     @media (max-width:768px){
         display:block;
         padding-top:50px;
-        margin-top:100px;
+        /* margin-top:100px; */
     }
     @media (min-width:769px) and (max-width:1200px){
             flex-wrap:wrap;
             justify-content:flex-start;
-            margin-top:100px;
+            /* margin-top:100px; */
     }
     
 `

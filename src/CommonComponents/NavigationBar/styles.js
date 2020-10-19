@@ -35,9 +35,13 @@ export const navBar_container  = styled.div`
     display:flex;
     height:79px;
     box-shadow:2px 2px #f0f0f0;
+    position:sticky;
+    top:0px;
     @media (max-width:1000px){
         height:150px;
         display:block;
+        position:sticky;
+        top:0px;
     }
 `
 
