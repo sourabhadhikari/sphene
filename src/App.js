@@ -6,6 +6,11 @@ import Home from './Pages/Home/Home'
 import {Route} from 'react-router-dom'
 import Contact from './Pages/Contact/Contact'
 import Header from './CommonComponents/Header/Header'
+import ContentRight from './Pages/Home/ViewPage/Content_Right/Right'
+import ContentLeft from './Pages/Home/ViewPage/Content_Left/left'
+import ContentBottom from './Pages/Home/ViewPage/Content_Bottom/bottom'
+import ContentCreative from './Pages/Home/ViewPage/Creative/Creative'
+import SinglePageProject from './Pages/Home/ViewPage/SinglePageProject/Single'
 function App() {
   return (
     <div>
@@ -15,6 +20,11 @@ function App() {
     
     <Route path="/" exact component={Home} />
     <Route path="/Contact" exact component={Contact} />
+    <Route path="/Home/creative-ContentRight" exact component={ContentRight} />
+    <Route path="/Home/creative-ContentLeft" exact component={ContentLeft} />
+    <Route path="/Home/creative-ContentBottom" exact component={ContentBottom} />
+    <Route path="/Home/creative-ContentCreative" exact component={ContentCreative} />
+    <Route path="/Home/creative-SinglePageProject" exact component={SinglePageProject} />
     <Footer/>
     </div>
 

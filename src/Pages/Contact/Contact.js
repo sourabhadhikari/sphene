@@ -1,10 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
 import * as styles from './styles'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Contact_Details from './contactDetails'
 import {faPhoneAlt, faFax, faGlobe, faEnvelope} from '@fortawesome/free-solid-svg-icons'
-
+import {db} from './firebase'
 const Contact = () =>{
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        ;
+        db.collection('contacts').add({
+            name:name,
+            email:email,
+            sunject:subject,
+            message:message
+
+        })
+        .then (() => {
+            alert('message has been submitted');
+            
+        })
+        .catch((error)=>{
+            alert(error.message);
+            
+        })
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+    }
     return(
         <div>
             <styles.location>
@@ -30,16 +60,20 @@ const Contact = () =>{
                     <Contact_Details sub_heading={'E-Mail:'} data={'#'} link={'office@example.com'} logo={faEnvelope}/>
 
                 </styles.find_us>
-                <styles.contact_form>
+                <styles.contact_form onSubmit={handleSubmit}>
                     <styles.heading>Contact Form</styles.heading>
                     <styles.name_email>
-                        <styles.input placeholder="Name"></styles.input>
-                        <styles.input placeholder="Email"></styles.input>
+                        <styles.input placeholder="Name" value={name}
+                            onChange={(e)=> setName(e.target.value)}></styles.input>
+                        <styles.input placeholder="Email" value={email}
+                            onChange={(e)=> setEmail(e.target.value)}></styles.input>
                         
                     </styles.name_email>
-                    <styles.input placeholder="subject"></styles.input>
-                    <styles.inputarea placeholder="Message"></styles.inputarea>
-                    <styles.button>SUBMIT MESSAGE</styles.button>
+                    <styles.input placeholder="subject" value={subject}
+                            onChange={(e)=> setSubject(e.target.value)}></styles.input>
+                    <styles.inputarea placeholder="Message" value={message}
+                            onChange={(e)=> setMessage(e.target.value)}></styles.inputarea>
+                    <styles.button type="submit">SUBMIT MESSAGE</styles.button>
                 </styles.contact_form>
             </styles.contact_us>
             

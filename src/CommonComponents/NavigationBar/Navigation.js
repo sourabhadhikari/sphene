@@ -1,12 +1,19 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import styled from 'styled-components'
 import * as styles from './styles'
 import {Link} from 'react-router-dom';
 import logo from '../../Assets/Images/logo-2.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-
+import './navbar.css'
 import {faSearch, faShoppingCart,faBars } from '@fortawesome/free-solid-svg-icons'
-const navBar  = () =>{
+import {SidebarData} from './sidebardata'
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import {IconContext} from 'react-icons'
+const NavBar  = () =>{
+    const [sidebar, setSidebar] = useState(false);
+
+    const showSideBar = () => setSidebar(!sidebar);
     return(
         <div>
             <styles.navBar_container>
@@ -24,8 +31,36 @@ const navBar  = () =>{
 
                 </styles.nav_container>
                 <styles.mobile_nav>
-                    <styles.mobile_nav_menu><FontAwesomeIcon  icon={faBars} size='lg'/>&nbsp; &nbsp;MENU</styles.mobile_nav_menu>
-                    <styles.mobile_nav_search><FontAwesomeIcon  icon={faSearch} size='2x'/></styles.mobile_nav_search>
+                    <styles.mobile_nav_menu >
+                        <Link to='#' className='menu-bars'>
+                            <FaIcons.FaBars onClick ={showSideBar}/>
+                        </Link>    
+                    &nbsp; &nbsp;<styles.menu>MENU</styles.menu></styles.mobile_nav_menu>
+                    <IconContext.Provider value={{color:'#fff'}}>
+                        <nav className={sidebar? "nav-menu active": "nav-menu" }>
+                            <ul className="nav-menu-items" >
+                                <li className="navbar-toggle">
+                                    <Link to="#" className="menu-bars">
+                                        <AiIcons.AiOutlineClose onClick ={showSideBar} />
+                                    </Link>
+                                </li>
+                                {SidebarData.map((item, index)=>{
+                                    return(
+                                        <li key={index} className={item.cName}>
+                                            <Link to={item.path}>
+                                                <span>{item.icon}</span>
+                                                <span>{item.title}</span>
+                                            </Link>
+                                            
+                                        </li>
+                                    )
+                                })}
+
+                            </ul>
+                        </nav>
+                    </IconContext.Provider>
+                    
+                    <styles.mobile_nav_search ><FontAwesomeIcon  icon={faSearch} size='2x'/></styles.mobile_nav_search>
                 </styles.mobile_nav>
 
                 <styles.icons>
@@ -38,4 +73,4 @@ const navBar  = () =>{
     )
 }
 
-export default navBar;
+export default NavBar;
