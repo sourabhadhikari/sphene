@@ -1,14 +1,20 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import CarouselTop from './HomeComponents/Carousel/CarouselTop'
+import Services from './HomeComponents/Services/Services'
+import Project from './HomeComponents/Project/Project'
+import Phase from './HomeComponents/Phases/phases'
+import Creative from './HomeComponents/Creative/Creative'
+import CarouselBottom from './HomeComponents/Carousel/CarouselBottom'
 const Home = () =>{
     return(
         <div>
-            <p><Link to="/Home/creative-ContentRight" style={{textDecoration:'none', color:'#373737'}}>Content-right</Link></p>
-            <p><Link to="/Home/creative-ContentLeft" style={{textDecoration:'none', color:'#373737'}}>Content-left</Link></p>
-
-            <p><Link to="/Home/creative-ContentBottom" style={{textDecoration:'none', color:'#373737'}}>Content-Bottom</Link></p>
-            <p><Link to="/Home/creative-ContentCreative" style={{textDecoration:'none', color:'#373737'}}>Content-Creative</Link></p>
-            <p><Link to="/Home/creative-SinglePageProject" style={{textDecoration:'none', color:'#373737'}}>SinglePageProject</Link></p>
+            <CarouselTop />
+            <Services />
+            <Project />
+            <Phase />
+            <Creative />
+            <CarouselBottom />
         </div>
     )
 }
