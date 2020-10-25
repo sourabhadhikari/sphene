@@ -47,6 +47,7 @@ export const button = styled.button `
     height:30px;
     color:black;
     width:120px;
+    margin-bottom:60px;
     font-weight:600;
     &:hover{
         background:#44b272;

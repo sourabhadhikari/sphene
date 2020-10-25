@@ -44,7 +44,7 @@ export const Buttonleft = styled.button`
   visibility:hidden;
   /* padding-left:40px;
   padding-right:40px; */
-  top:42%;
+  top:41%;
   border:none;
   z-index:200;
   margin-left:10px;
@@ -67,7 +67,7 @@ export const ButtonRight = styled.button`
   margin-right:10px;
   visibility:hidden;
   /* margin-left:-80px; */
-  top:42%;
+  top:41%;
   right:0%;
   &:hover{
     background-color:#4CAF50;

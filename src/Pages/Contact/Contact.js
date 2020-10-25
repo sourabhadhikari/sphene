@@ -3,7 +3,7 @@ import * as styles from './styles'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Contact_Details from './contactDetails'
 import {faPhoneAlt, faFax, faGlobe, faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import {db} from './firebase'
+import {db} from '../../firebase'
 const Contact = () =>{
 
     const [name, setName] = useState("");
@@ -14,7 +14,7 @@ const Contact = () =>{
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        ;
+       
         db.collection('contacts').add({
             name:name,
             email:email,

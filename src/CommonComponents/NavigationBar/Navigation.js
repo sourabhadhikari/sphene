@@ -68,6 +68,10 @@ const NavBar  = () =>{
                     <styles.icon><FontAwesomeIcon  icon={faShoppingCart} size='lg'/></styles.icon>
                 </styles.icons>
             </styles.navBar_container>
+            <styles.dropdown>
+                
+            </styles.dropdown>
+            
         </div>
 
     )

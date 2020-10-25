@@ -22,7 +22,7 @@ export const Column = styled.div`
   
   justify-content:space-around;
   
-  margin-bottom:60px;
+  
   
   
 `;
@@ -31,7 +31,6 @@ export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(4,auto);
   grid-gap: 0px;
-
   @media (max-width: 1346px) {
     grid-template-columns: repeat(2,auto);
     grid-gap:0px;
@@ -46,7 +45,6 @@ export const Link = styled.a`
   margin-bottom: 4px;
   font-size: 18px;
   text-decoration: none;
-
   &:hover {
       color:#44B272;
       transition: 200ms ease-in;

@@ -16,5 +16,5 @@ var firebaseApp = firebase.initializeApp({
 
 
 var db = firebaseApp.firestore();
-
+export default firebaseApp;
 export {db};

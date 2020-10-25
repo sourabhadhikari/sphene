@@ -23,7 +23,7 @@ class CarouselTop extends Component {
     return (
       <styles.CarouselContainer>
           <styles.Buttonleft onClick={() => this.carousel.slidePrev()}><FontAwesomeIcon  icon={faAngleLeft} size='2x'/></styles.Buttonleft>
-          <Carousel className="carousel-style" styles={{margin:'0',padding:'0'}}ref={ref => (this.carousel = ref)} className="topCarousel" enableAutoPlay = {true} showArrows={false}>
+          <Carousel className="carousel-style" styles={{margin:'0',padding:'0',position:'relative'}}ref={ref => (this.carousel = ref)} className="topCarousel" enableAutoPlay = {true} showArrows={false}>
             {items.map(item => <styles.div key={item.id}><img src={item.url} style={{height:'800px', width:'100%'}}></img></styles.div>)}
           </Carousel>
           <styles.ButtonRight onClick={() => this.carousel.slideNext()}><FontAwesomeIcon  icon={faAngleRight} size='2x'/></styles.ButtonRight>
