@@ -12,11 +12,12 @@ export const container = styled.div `
     } */
 `
 export const slider = styled.div `
-    height:300px;
+    /* height:300px; */
     background-color:#f6f6f6;
     background-position:top;
     background-repeat:no-repeat;
     background-size:cover;
+    padding-bottom:200px;
     /* filter:brightness(50%) */
     
 `

@@ -141,19 +141,19 @@ export const SidebarData = [
     },
     {
         title:'Classic-Content-Right',
-        path:'/',
+        path:'/Home/creative-ContentRight',
         icon: '',
         cName: 'nav-text'
     },
     {
         title:'Classic-Content-Left',
-        path:'/',
+        path:'/Home/creative-ContentLeft',
         icon: '',
         cName: 'nav-text'
     },
     {
         title:'Classic-Content-Bottom',
-        path:'/',
+        path:'/Home/creative-ContentBottom',
         icon: '',
         cName: 'nav-text'
     },
@@ -164,8 +164,8 @@ export const SidebarData = [
         cName: 'nav-head'
     },
     {
-        title:'About Us',
-        path:'/',
+        title:'Classic-Content-Creative',
+        path:'/Home/creative-ContentCreative',
         icon: '',
         cName: 'nav-text'
     },
@@ -291,7 +291,7 @@ export const SidebarData = [
     },
     {
         title:'Contact',
-        path:'/',
+        path:'/Contact',
         icon: <ImIcons.ImStack/>,
         cName: 'nav-head'
     },

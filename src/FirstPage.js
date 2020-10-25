@@ -12,14 +12,14 @@ import ContentBottom from './Pages/Home/ViewPage/Content_Bottom/bottom'
 import ContentCreative from './Pages/Home/ViewPage/Creative/Creative'
 import SinglePageProject from './Pages/Home/ViewPage/SinglePageProject/Single'
 import './index.css'
-
+import theme from './CommonComponents/colorTheme/theme'
 const FirstPage = ({handleLogout})=>{
     return (
         <div>
       
     <Header />
     <NavBar />
-    
+    {/* <theme></theme> */}
     <Route path="/" exact component={Home} />
     <Route path="/Contact" exact component={Contact} />
     <Route path="/Home/creative-ContentRight" exact component={ContentRight} />
