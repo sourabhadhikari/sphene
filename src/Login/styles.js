@@ -1,13 +1,29 @@
 import styled from 'styled-components'
 import loginImg from '../Assets/Images/login.jpg'
 
+
+export const container = styled.div `
+    @media (min-width:1200px){
+        display:flex;
+    }
+`
+export const Login = styled.div `
+    @media (min-width:1200px){
+        width:40%;
+    }
+`
 export const loginImage = styled.div `
-    /* background-image:url(${loginImg});
-    width:100%;
-    height:100vh;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center; */
+    display:none;
+    @media (min-width:1200px){
+        display:block;
+        width:60%;
+        height:100vh;
+        background:url(${loginImg});
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+
+    }
 `
 export const heading = styled.p `
     text-align:center;
