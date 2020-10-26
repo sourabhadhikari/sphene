@@ -135,7 +135,7 @@ export const data =styled.div `
 `
 export const link =styled.a `
     text-decoration:none;
-    color:${localStorage.getItem('Theme')};
+    color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
 `
 export const name_email =styled.div `
     @media (min-width:1000px){
@@ -192,13 +192,13 @@ export const button = styled.button `
     height:60px;
     border-radius:30px;
     font-size:18px;
-    color:${localStorage.getItem('Theme')};
-    border-color:${localStorage.getItem('Theme')};
+    color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
+    border-color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
     font-weight:bold;
     background:white;
     &:hover{
         color:white;
-        background:${localStorage.getItem('Theme')};
+        background:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
         cursor: pointer;
     }
     `

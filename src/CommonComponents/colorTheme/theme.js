@@ -5,6 +5,7 @@ import './styles.css'
 import {FiSettings} from "react-icons/fi";
 const Theme = () => {
     const [show, setShow] = useState(false);
+    
     const changeTheme = (ThemeColor) =>{
         // setToggle(!toggle);
         // console.log(toggle);

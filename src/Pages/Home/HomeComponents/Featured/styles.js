@@ -20,7 +20,7 @@ export const icon = styled.div `
     width:25%;
     
     text-align:center;
-    color:${localStorage.getItem('Theme')};
+    color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
     padding-left:10px;
     
 `
@@ -55,7 +55,7 @@ export const cards = styled.div `
         width:30%;
     }
     &:hover{
-        background-color:${localStorage.getItem('Theme')};
+        background-color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
     }
     &:hover ${icon}{
         color:white;

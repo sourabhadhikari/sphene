@@ -10,7 +10,7 @@ const Login = () => {
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const [hasAccount, setHasAccount] = useState(false);
-
+    localStorage.setItem('Theme','#4fb77a')
     const clearInput = () =>{
         setEmail('');
         setPassword('');

@@ -75,7 +75,7 @@ export const ButtonRight = styled.button`
   }
 `
 export const Dynamictext = styled.span `
-  color:${localStorage.getItem('Theme')};
+  color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
 `
 export const CarouselContainer = styled.div`
   /* display:flex; */

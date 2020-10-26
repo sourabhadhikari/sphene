@@ -21,7 +21,7 @@ export const Icon = styled.i`
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: ${localStorage.getItem('Theme')};
+    color: ${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
 `
 
 export const IconBox = styled.div`
