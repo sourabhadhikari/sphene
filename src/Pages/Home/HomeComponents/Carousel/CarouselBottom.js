@@ -7,7 +7,7 @@ import four from '../../../../Assets/Images/logo-04.png'
 import five from '../../../../Assets/Images/logo-05.png'
 import six from '../../../../Assets/Images/logo-06.png'
 import seven from '../../../../Assets/Images/logo-07.png'
-import {Container, ContainerHead, Item, StyledDiv} from './styles'
+import {Container, ContainerHead, Item, StyledDiv, Dynamictext} from './styles'
 import  './styles.css'
 const breakPoints = [
     { width: 1, itemsToShow: 2 },
@@ -34,7 +34,7 @@ export default class BottomCarousel extends Component {
         return (
             <div>
               <Container>
-                <ContainerHead>Some Of Our Happy Clients, <span style={{color:'#44b272'}}>Join To Them!</span></ContainerHead>
+                <ContainerHead>Some Of Our Happy Clients, <Dynamictext>Join To Them!</Dynamictext></ContainerHead>
                 <Carousel className ="bottomCarousel" breakPoints={breakPoints} showArrows={false}>
                     {items.map(item => <Item key={item.id}><img src={item.url}></img></Item>)}
                 </Carousel>

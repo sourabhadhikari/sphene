@@ -8,7 +8,7 @@ export const Icon = styled.i`
     width: 100%;
     display: block;
     font-size: 100px;
-    color: #666;
+    
     height: 125px;
     font-family: 'linearicons' !important;
     font-style: normal;
@@ -21,7 +21,7 @@ export const Icon = styled.i`
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color:#44b272;
+    color: ${localStorage.getItem('Theme')};
 `
 
 export const IconBox = styled.div`

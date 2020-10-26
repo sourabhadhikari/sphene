@@ -50,7 +50,7 @@ export const button = styled.button `
     margin-bottom:60px;
     font-weight:600;
     &:hover{
-        background:#44b272;
+        background:${localStorage.getItem('Theme')};
         cursor: pointer;
         color:white;
     }

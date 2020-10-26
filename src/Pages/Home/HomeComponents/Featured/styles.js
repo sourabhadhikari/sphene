@@ -14,31 +14,22 @@ width:100%;
     }
 `
 
-export const cards = styled.div `
-    /* height:250px; */
-    margin:30px;
-    background:#f5f5f5;
-    min-width:400px;
-    padding-top:80px;
-    padding-bottom:50px;
-    @media (min-width:1500px){
-        width:30%;
-    }
-    
-`
+
 export const icon = styled.div `
     font-size:90px;
     width:25%;
     
     text-align:center;
-    color:#4fb77a;
+    color:${localStorage.getItem('Theme')};
     padding-left:10px;
+    
 `
 export const text = styled.div `
     width:70%;
     
     margin-top:20px;
     font-size:18px;
+    
 `
 export const service = styled.div `
     font-size:24px;
@@ -52,4 +43,27 @@ export const outerwrap = styled.div `
 `
 export const innerwrap = styled.div `
     margin-left:10px;
+`
+export const cards = styled.div `
+    /* height:250px; */
+    margin:30px;
+    background:#f5f5f5;
+    min-width:400px;
+    padding-top:80px;
+    padding-bottom:50px;
+    @media (min-width:1500px){
+        width:30%;
+    }
+    &:hover{
+        background-color:${localStorage.getItem('Theme')};
+    }
+    &:hover ${icon}{
+        color:white;
+    } 
+    &:hover ${text}{
+        color:white;
+    } 
+    &:hover ${service}{
+        color:white;
+    } 
 `

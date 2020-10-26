@@ -7,7 +7,7 @@ export const Data = [
     },
     {
         theme_name:'red',
-        color:'blue'
+        color:'red'
     },
     {
         theme_name:'blue',
@@ -15,7 +15,7 @@ export const Data = [
     },
     {
         theme_name:'yellow',
-        color:'yellow'
+        color:'purple'
     },
 
 ]

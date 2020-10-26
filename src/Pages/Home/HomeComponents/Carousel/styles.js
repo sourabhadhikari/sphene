@@ -74,6 +74,9 @@ export const ButtonRight = styled.button`
     color:white;
   }
 `
+export const Dynamictext = styled.span `
+  color:${localStorage.getItem('Theme')};
+`
 export const CarouselContainer = styled.div`
   /* display:flex; */
   /* align-items:row; */

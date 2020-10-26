@@ -64,13 +64,13 @@ export const button = styled.button `
     margin-top:40px;
     border-radius:15px;
     background:white;
-    border-color:#4fb77a;
-    color:#4fb77a;
+    border-color:${localStorage.getItem('Theme')};
+    color:${localStorage.getItem('Theme')};
     font-size:26px;
     
     cursor: pointer;
     &:hover{
-        background:#4fb77a;
+        background:${localStorage.getItem('Theme')};
         color:white;
     }
 `

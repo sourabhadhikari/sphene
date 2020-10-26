@@ -1,0 +1,7 @@
+.Tray {
+    left:-190px;
+    
+}
+.Tray.active {
+    left:0px;
+}

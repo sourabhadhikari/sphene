@@ -11,11 +11,12 @@ import ContentLeft from './Pages/Home/ViewPage/Content_Left/left'
 import ContentBottom from './Pages/Home/ViewPage/Content_Bottom/bottom'
 import ContentCreative from './Pages/Home/ViewPage/Creative/Creative'
 import SinglePageProject from './Pages/Home/ViewPage/SinglePageProject/Single'
+import Theme from './CommonComponents/colorTheme/theme'
 import Login from './Login/Login'
 function App() {
   return (
     <div>
-      
+      <Theme />
       <Login/>
     
     </div>
