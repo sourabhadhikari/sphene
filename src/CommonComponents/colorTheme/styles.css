@@ -1,7 +1,9 @@
 .Tray {
     left:-190px;
+    transition: 800ms;
     
 }
 .Tray.active {
     left:0px;
+    transition: 500ms;
 }

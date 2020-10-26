@@ -124,7 +124,10 @@ export const facebook = styled.div `
     color:white;
     padding-left:25px;
     padding-top:15px;
-
+    @media (max-width:768px){
+        width:90%;
+        
+    }
     &:hover{
         background:white;
         color:#333333;

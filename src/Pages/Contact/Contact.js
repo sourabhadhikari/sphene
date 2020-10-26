@@ -41,7 +41,9 @@ const Contact = () =>{
                 <styles.map></styles.map>
                 <styles.office_background>
                     <styles.our_office>Our Office</styles.our_office>
+                    
                     <styles.office_address>
+                        <styles.coloredLine></styles.coloredLine>
                         <styles.addr>45 Park Avenue, Apt.303</styles.addr>
                         <styles.addr>NewYork, NY, 10016</styles.addr>
                         <styles.addr>Phone: (123)123-456</styles.addr>

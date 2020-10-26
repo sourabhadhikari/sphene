@@ -71,12 +71,25 @@ export const office_address = styled.div `
         font-size:14px;
         font-weight:bold;
         width:220px;
-        top:100px;
+        top:80px;
         left:50%;
         margin-top:50px;
         margin-left:-110px;
         @media (min-width:1000px){
-            margin-top:100px;
+            margin-top:50px;
+        }
+        
+`
+export const coloredLine = styled.div `
+        
+        background-color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
+        height:5px;
+        width:100px;
+        margin:auto;
+        
+        
+        @media (min-width:1000px){
+            margin-top:30px;
         }
         
 `

@@ -123,15 +123,15 @@ export const button = styled.button `
     height:60px;
     border-radius:30px;
     font-size:16px;
-    color:#44b272;
-    border-color:#44b272;
+    color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
+    border-color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
     font-weight:bold;
     background:white;
     margin-left:auto;
     margin-right:auto;
     &:hover{
         color:white;
-        background:#44b272;
+        background:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
         cursor: pointer;
     }
 `

@@ -4,6 +4,7 @@ import carousel from './carouel'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {Link} from 'react-router-dom';
 import {faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import {data_creative,data_common} from '../data'
 const Creative = () => {
 
 
@@ -12,7 +13,7 @@ const Creative = () => {
             <styles.slider>
                 <styles.slide>
                     <styles.arrow><Link to="/Home/creative-SinglePageProject" style={{textDecoration:'none', color:'white'}}><FontAwesomeIcon  icon={faChevronLeft} size='3x'/></Link> </styles.arrow>
-                    <styles.title>Single Project - Content Creative</styles.title>
+                    <styles.title>{data_creative.title}</styles.title>
                     <styles.arrow><Link to="/Home/creative-ContentRight" style={{textDecoration:'none', color:'white'}}><FontAwesomeIcon  icon={faChevronRight} size='3x'/></Link></styles.arrow>
                 </styles.slide>
             </styles.slider>
@@ -22,26 +23,26 @@ const Creative = () => {
                 <styles.content>
                     <styles.content1>
 
-                        <styles.heading>Overview</styles.heading>
-                        <styles.text>Nulla congue magna varius pellentesque.Entesque habitant morbi tristique senectus lorem et netus et malesuada fames ac turpis egestas.</styles.text>
-                        <styles.text>Vestibulum quis ipsum ipsum. Maecenas ullamcorper nibh sed justo iaculis lacinia. Nam eu arcu facilisis, condimentum urna et, tempor erat.</styles.text>
+                        <styles.heading>{data_creative.heading}</styles.heading>
+                        <styles.text>{data_common.text1}</styles.text>
+                        <styles.text>{data_common.text2}</styles.text>
                         
                     </styles.content1>
                     <styles.content2>
                         <styles.data>
                             <styles.data_field>Date: </styles.data_field>
-                            <styles.data_value>11 January 2016</styles.data_value>
+                            <styles.data_value>{data_common.date}</styles.data_value>
                             <styles.line></styles.line>
                         </styles.data>
                         <styles.data>
                             <styles.data_field>Location: </styles.data_field>
-                            <styles.data_value>London</styles.data_value>
+                            <styles.data_value>{data_common.location}</styles.data_value>
                             <styles.line></styles.line>
                         </styles.data>
                         <styles.data>
                             
                             <styles.data_field>Category: </styles.data_field>
-                            <styles.data_value>Kitchen, Carpentry</styles.data_value>
+                            <styles.data_value>{data_common.category}</styles.data_value>
                         </styles.data>
                         <styles.button>LAUNCH PROJECT</styles.button>
                     </styles.content2>
