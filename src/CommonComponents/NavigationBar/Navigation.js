@@ -9,11 +9,13 @@ import {faSearch, faShoppingCart,faBars } from '@fortawesome/free-solid-svg-icon
 import {SidebarData} from './sidebardata'
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import {IconContext} from 'react-icons'
+import {IconContext} from 'react-icons';
+
 const NavBar  = () =>{
     const [sidebar, setSidebar] = useState(false);
 
     const showSideBar = () => setSidebar(!sidebar);
+   
     return(
         <div>
             <styles.navBar_container>
@@ -21,13 +23,13 @@ const NavBar  = () =>{
                    
                 <styles.nav_container>
                    
-                    <styles.nav_tabs><Link to="/" style={{textDecoration:'none', color:'#373737'}}>HOME</Link></styles.nav_tabs>
+                    <styles.nav_tabs  ><Link to="/" style={{textDecoration:'none', color:'#373737'}}>HOME</Link></styles.nav_tabs>
                     <styles.nav_tabs><Link to="/" style={{textDecoration:'none', color:'#373737'}}>PORTFOLIO</Link></styles.nav_tabs>
                     <styles.nav_tabs><Link to="/" style={{textDecoration:'none', color:'#373737'}}>PAGES</Link></styles.nav_tabs>
                     <styles.nav_tabs><Link to="/" style={{textDecoration:'none', color:'#373737'}}>ELEMENTS</Link></styles.nav_tabs>
                     <styles.nav_tabs><Link to="/" style={{textDecoration:'none', color:'#373737'}}>SHOP</Link></styles.nav_tabs>
                     <styles.nav_tabs><Link to="/" style={{textDecoration:'none', color:'#373737'}}>BLOG</Link></styles.nav_tabs>
-                    <styles.nav_tabs><Link to="/Contact" style={{textDecoration:'none', color:'#373737'}}>CONTACT</Link></styles.nav_tabs>
+                    <styles.nav_tabs ><Link to="/Contact" style={{textDecoration:'none', color:'#373737'}}>CONTACT</Link></styles.nav_tabs>
 
                 </styles.nav_container>
                 <styles.mobile_nav>
