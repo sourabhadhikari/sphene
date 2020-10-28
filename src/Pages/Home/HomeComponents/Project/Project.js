@@ -10,7 +10,8 @@ export default class Projects extends Component {
         super(props);
         this.state={
             type:"PEOPLE",
-            all:true
+            all:true,
+            name:""
          }
      this.handleClickPEOPLE = this.handleClickPEOPLE.bind(this)
      this.handleClickANIMALS = this.handleClickANIMALS.bind(this)    
@@ -29,6 +30,14 @@ export default class Projects extends Component {
             all:false
         }))   
     }
+     handleClickSearch(valuesearch){
+        const searchValue = valuesearch.toUpperCase();
+        this.setState(state=>({
+            type : searchValue,
+            all:false,
+            name : valuesearch,
+        }))   
+    }
     handleClickANIMALS(){
        this.setState(state=>({
            type : "ANIMALS",
@@ -43,6 +52,9 @@ export default class Projects extends Component {
 }
 
     render() {
+        const background = {
+            backgroundColor: `localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'`
+        }
         return (
             <Cards>
                 <Cards.Title style ={{paddingTop:"60px"}}>Our Latest Projects</Cards.Title>
@@ -51,16 +63,18 @@ export default class Projects extends Component {
                 <Cards.Column ><styles.button onClick={this.handleClickPEOPLE}>PEOPLE</styles.button></Cards.Column>
                 <Cards.Column ><styles.button onClick={this.handleClickANIMALS}>ANIMALS</styles.button></Cards.Column>
                 <Cards.Column ><styles.button onClick={this.handleClickOTHERS}>OTHERS</styles.button></Cards.Column>
+                
                 </Cards.Row>
+                <styles.search onChange = {(e)=>this.handleClickSearch(e.target.value)}placeholder="search"></styles.search>
                 <Cards.Row>
                 {Data.map((item,index)=>{
                     
                         const images = require.context('../../../../Assets/Images/', true);
                         let img = images('./' + item.imageName);
-                        console.log(this.state.type)
-                        console.log(item.type)
+                        // console.log(this.state.type)
+                        // console.log(item.type)
                         
-                        if(this.state.all||this.state.type===item.type)
+                        if(this.state.all||this.state.type===item.type||this.state.name===item.title)
                         return(
                             <Link to={item.link} >
                                 <Cards.Column key={index}>
@@ -70,11 +84,11 @@ export default class Projects extends Component {
                         )
                         else
                         return(
-                            <Link to={item.link} >
+                            
                                 <Cards.Column key={index}>
                                     <Card data={img} title = {item.title} subtitle = {item.subtitle} active = {0}/>
                                 </Cards.Column>
-                            </Link>
+                            
                         )
                     
                         

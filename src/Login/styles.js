@@ -30,6 +30,12 @@ export const heading = styled.p `
     font-size:50px;
     font-weight:500;
 `
+export const success = styled.p `
+    text-align:center;
+    font-size:20px;
+    color:green;
+    font-weight:500;
+`
 export const logo = styled.img `
     display:block;
     margin:auto;
@@ -40,12 +46,13 @@ export const label = styled.p`
     margin-bottom:0;
     color:black;
     font-size:22px;
+
     
 `
 export const input = styled.input `
     
     display:block;
-    width:95%;
+    width:59%;
     margin:auto;
     height:60px;
     margin-top:30px;
@@ -58,7 +65,7 @@ export const input = styled.input `
 `
 export const button = styled.button `
     display:block;
-    width:96%;
+    width:60%;
     margin:auto;
     height:70px;
     margin-top:40px;
@@ -93,6 +100,7 @@ export const change = styled.span `
     margin-left:5px;
     cursor: pointer;
     color:red;
+    font-size:18px;
     
     
 `
@@ -100,13 +108,24 @@ export const span = styled.span `
     display:inline-block;
     
     margin-left:auto;
+    font-size:18px;
     
 `
-export const text = styled.div `
+export const cont = styled.p `
     
-    display:flex;
-    margin-top:15px;
-    margin-right:15px;
+    
+    margin-top:30px;
+    margin-left:42%; 
+    @media (min-width:1200px){
+       margin-left:37%;
+    }
+    
+`
+export const bottom = styled.div `
+    width:100px;
+    margin:0 auto;
+    margin-top:35px;
+    
     
 `
 export const header = styled.div `

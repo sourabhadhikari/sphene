@@ -16,9 +16,9 @@ width:100%;
 
 
 export const icon = styled.div `
-    font-size:90px;
-    width:25%;
-    
+    font-size:130px;
+    width:40%;
+    padding-top:30px;
     text-align:center;
     color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
     padding-left:10px;
@@ -28,13 +28,15 @@ export const text = styled.div `
     width:70%;
     
     margin-top:20px;
-    font-size:18px;
+    font-family:lato;
+    font-size:24px;
+    line-height:40px;
     
 `
 export const service = styled.div `
     font-size:24px;
-    
-    color:#494949;
+    font-weight:500;
+    color:black;
 `
 export const outerwrap = styled.div `
     display:flex;
@@ -53,6 +55,7 @@ export const cards = styled.div `
     padding-bottom:50px;
     @media (min-width:1500px){
         width:30%;
+        height:220px;
     }
     &:hover{
         background-color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};

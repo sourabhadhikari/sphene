@@ -15,6 +15,9 @@ const Contact = () =>{
     const handleSubmit = (e) => {
         e.preventDefault();
        
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
+            alert('invalid email')
+        }
         db.collection('contacts').add({
             name:name,
             email:email,
@@ -65,15 +68,15 @@ const Contact = () =>{
                 <styles.contact_form onSubmit={handleSubmit}>
                     <styles.heading>Contact Form</styles.heading>
                     <styles.name_email>
-                        <styles.input placeholder="Name" value={name}
+                        <styles.input placeholder="Name" required value={name}
                             onChange={(e)=> setName(e.target.value)}></styles.input>
-                        <styles.input placeholder="Email" value={email}
+                        <styles.input type="email" placeholder="Email" value={email}
                             onChange={(e)=> setEmail(e.target.value)}></styles.input>
                         
                     </styles.name_email>
-                    <styles.input placeholder="subject" value={subject}
+                    <styles.input placeholder="subject" required value={subject}
                             onChange={(e)=> setSubject(e.target.value)}></styles.input>
-                    <styles.inputarea placeholder="Message" value={message}
+                    <styles.inputarea placeholder="Message" required value={message}
                             onChange={(e)=> setMessage(e.target.value)}></styles.inputarea>
                     <styles.button type="submit">SUBMIT MESSAGE</styles.button>
                 </styles.contact_form>

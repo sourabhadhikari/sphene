@@ -6,7 +6,7 @@ export const nav_container = styled.ul `
     justify-content:flex-end;
     margin-left:auto;
     
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         display:none;
     }
     
@@ -22,12 +22,12 @@ export const a = styled.a `
 `
 export const navBar_container  = styled.div`
     display:flex;
-    height:79px;
+    height:130px;
     box-shadow:2px 2px #f0f0f0;
     position:sticky;
     top:0px;
     z-index: 100000;
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         height:150px;
         display:block;
         position:sticky;
@@ -37,10 +37,10 @@ export const navBar_container  = styled.div`
 
 export const logo = styled.img`
     display:inline-block;
-    padding-top:30px;
-    height:20px;
+    padding-top:50px;
+    height:35px;
     margin-left:12%;
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         display:block;
         margin-left:auto;
         margin-right:auto;
@@ -50,9 +50,9 @@ export const logo = styled.img`
 export const icons = styled.div `
     display:flex;
     margin-left:0;
-    margin-right:auto;
+    margin-right:90px;
     margin-left:50px;
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         display:none;
     }
     
@@ -64,12 +64,13 @@ export const menu = styled.span `
 `
 export const icon = styled.div `
     color:#373737;
-    padding-top:26px;
+    font-size:20px;
+    padding-top:56px;
     margin-right:10px;
 `
 export const mobile_nav = styled.div `
     display:none;
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         display:flex;
         position:relative;
         width:95%;
@@ -83,7 +84,7 @@ export const mobile_nav = styled.div `
 
 export const mobile_nav_menu = styled.div `
     display:none;
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         display:block;
         width:93%;
         background-color:#44b272;
@@ -95,7 +96,7 @@ export const mobile_nav_menu = styled.div `
 `
 export const mobile_nav_search = styled.div `
     display:none;
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         display:block;
         width:63px;
         background-color:#60be87;
@@ -116,15 +117,14 @@ export const dropdown = styled.div `
 export const nav_tabs = styled.li  `
     
     list-style:none;
-    margin:0px 8px;
-    padding-top:14px;
-    height:47px;
-    
+    margin:0px 12px;
+    padding-top:40px;
+    height:72px;
+    font-weight:600;
+    font-size:20px;
     
     &:hover{
         border-bottom: 3px solid #44B272;
     }
-    &:hover ${dropdown}{
-        visibility:visible;
-    }
+   
 `

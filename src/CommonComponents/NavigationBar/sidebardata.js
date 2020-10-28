@@ -13,132 +13,132 @@ export const SidebarData = [
         icon: '',
         cName: 'nav-head'
     },
-    {
-        title:'Main Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Agency Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Classic Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Corporate Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Resume/CV Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Shop Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'PhotoGraphy Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Magazine/Blog Demo',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio',
-        path:'/',
-        icon: '',
-        cName: 'nav-head'
-    },
-    {
-        title:'Portfolio Style 1',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio Style 2',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio Style 3',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio Style 4',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Photo Gallery',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio Style 1',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio Style 2',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio Style 3',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Portfolio Style 4',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'AJAX Portfolio',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Creative Style 1',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Creative Style 2',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
+    // {
+    //     title:'Main Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Agency Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Classic Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Corporate Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Resume/CV Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Shop Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'PhotoGraphy Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Magazine/Blog Demo',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-head'
+    // },
+    // {
+    //     title:'Portfolio Style 1',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio Style 2',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio Style 3',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio Style 4',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Photo Gallery',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio Style 1',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio Style 2',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio Style 3',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Portfolio Style 4',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'AJAX Portfolio',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Creative Style 1',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Creative Style 2',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
     {
         title:'Classic-Content-Right',
         path:'/Home/creative-ContentRight',
@@ -157,12 +157,12 @@ export const SidebarData = [
         icon: '',
         cName: 'nav-text'
     },
-    {
-        title:'Pages',
-        path:'/',
-        icon: '',
-        cName: 'nav-head'
-    },
+    // {
+    //     title:'Pages',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-head'
+    // },
     {
         title:'Classic-Content-Creative',
         path:'/Home/creative-ContentCreative',

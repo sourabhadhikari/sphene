@@ -5,6 +5,11 @@ import LoginPage from './LoginPage'
 import FirstPage from '../FirstPage'
 const Login = () => {
     const [user, setUser] = useState('');
+    const [loggedIn, setLoggedIn] = useState(true);
+    const [signedUpSuccess, setsignedUpSuccess] = useState(false);
+    const [userName, setUserName] = useState('');
+    
+    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -14,6 +19,7 @@ const Login = () => {
     const clearInput = () =>{
         setEmail('');
         setPassword('');
+        setUserName('');
     }
     const clearError = ()=>{
         setEmailError('');
@@ -21,6 +27,8 @@ const Login = () => {
     }
     const handleLogin = () =>{
         clearError();
+        setLoggedIn(true) ;
+        setsignedUpSuccess(false);
         fire    
             .auth()
             .signInWithEmailAndPassword(email,password)
@@ -39,6 +47,9 @@ const Login = () => {
     }
     const handleSignUp = () =>{
         clearError();
+        setsignedUpSuccess(true);
+        // setSignUp(false);
+        setLoggedIn(false);
         fire    
             .auth()
             .createUserWithEmailAndPassword(email,password)
@@ -54,8 +65,12 @@ const Login = () => {
                         break;
                 }
             })
+        
     }
     const handleLogout = () =>{
+        // setLoggedIn(false) ;
+        // setsignedUpSuccess(false);
+        
         fire.auth().signOut();
     }
     const authListener = () => {
@@ -63,6 +78,8 @@ const Login = () => {
             if(user){
                 clearInput();
                 setUser(user);
+                
+                
             }
             else{
                 setUser("");
@@ -75,7 +92,7 @@ const Login = () => {
     },[])
     return(
         <>
-        {user ? (
+        {user&&loggedIn ? (
             <FirstPage handleLogout={handleLogout}/>
         ) : (
             <LoginPage 
@@ -89,6 +106,10 @@ const Login = () => {
             setHasAccount={setHasAccount}
             emailError={emailError}
             passwordError={passwordError}
+            signedUpSuccess={signedUpSuccess}
+            setsignedUpSuccess={setsignedUpSuccess}
+            userName={userName}
+            setUserName={setUserName}
         />
         )
         

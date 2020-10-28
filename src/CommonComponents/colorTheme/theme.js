@@ -1,10 +1,11 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {Data} from './themeData'
 import * as styles from './styles'
 import './styles.css'
 import {FiSettings} from "react-icons/fi";
 const Theme = () => {
     const [show, setShow] = useState(false);
+    const [toggle, setToggle] = useState(false);
     
     const changeTheme = (ThemeColor) =>{
         // setToggle(!toggle);
@@ -15,6 +16,9 @@ const Theme = () => {
         
     }
     const showColorTray = () => setShow(!show);
+    // useEffect(() => {
+    //     changeTheme();
+    //   },[toggle]);
     return(
         <>
             <styles.container className={show? "Tray active": "Tray" }>

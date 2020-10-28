@@ -18,7 +18,8 @@ code {
 }
 
 body {
-  margin:0 auto
+  margin:0 auto;
+  font-family:'Montserrat', sans-serif;;
 }
 .SignOut {
   position:absolute;

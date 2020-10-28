@@ -56,3 +56,18 @@ export const button = styled.button `
     }
     
 `
+export const search = styled.input `
+    
+    display:block;
+    width:29%;
+    margin:auto;
+    height:40px;
+    /* margin-top:30px; */
+    font-size:20px;
+    margin-bottom:20px;
+    padding-left:20px;
+    &::placeholder{
+        font-size:20px;
+        
+    }
+`
