@@ -11,6 +11,15 @@ export const Card = styled.div`
             opacity:1;
 }
 `
+
+export const title = styled.p `
+    text-align:center;
+    font-size:50px;
+    font-weight:500;
+    padding-top:120px;
+    color:black;
+    margin-bottom:80px;
+`
 export const InactiveCard = styled(Card)`
     opacity:0.3;
     &:hover .middle{
@@ -71,3 +80,24 @@ export const search = styled.input `
         
     }
 `
+export const allProducts = styled.button `
+    width:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:60px;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:30px;
+    font-size:18px;
+    color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
+    border-color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
+    font-weight:bold;
+    background:white;
+    &:hover{
+        color:white;
+        background:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
+        cursor: pointer;
+    }
+    `

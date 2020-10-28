@@ -57,7 +57,7 @@ export default class Projects extends Component {
         }
         return (
             <Cards>
-                <Cards.Title style ={{paddingTop:"60px"}}>Our Latest Projects</Cards.Title>
+                <styles.title >Our Latest Projects</styles.title>
                 <Cards.Row style={{align:"center"}}>
                 <Cards.Column ><styles.button  onClick={this.handleClick}>ALL</styles.button></Cards.Column>
                 <Cards.Column ><styles.button onClick={this.handleClickPEOPLE}>PEOPLE</styles.button></Cards.Column>
@@ -94,6 +94,7 @@ export default class Projects extends Component {
                         
                     })}
                     </Cards.Row>
+                    <styles.allProducts>VIEW ALL PROJECTS</styles.allProducts>
             </Cards>
         )
     }

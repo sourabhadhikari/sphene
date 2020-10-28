@@ -169,60 +169,60 @@ export const SidebarData = [
         icon: '',
         cName: 'nav-text'
     },
-    {
-        title:'About ME',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Services Classic',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Contact Classic',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Contact Creative',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Coming Soon',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Login and Register',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'404 Not Found',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'FAQ',
-        path:'/',
-        icon: '',
-        cName: 'nav-text'
-    },
-    {
-        title:'Elements',
-        path:'/',
-        icon: '',
-        cName: 'nav-head'
-    },
+    // {
+    //     title:'About ME',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Services Classic',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Contact Classic',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Contact Creative',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Coming Soon',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Login and Register',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'404 Not Found',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'FAQ',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-text'
+    // },
+    // {
+    //     title:'Elements',
+    //     path:'/',
+    //     icon: '',
+    //     cName: 'nav-head'
+    // },
     {
         title:'Accordians',
         path:'/',

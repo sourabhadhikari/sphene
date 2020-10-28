@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const Featured = () => {
     return(
             <>
-                <styles.title>Featured Product</styles.title>
+                <styles.title>Featured Services</styles.title>
                 <styles.div>
                     {Cards.map((card,index) =>{
                         return(

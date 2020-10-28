@@ -27,14 +27,15 @@ export const Container = styled.div`
   padding-bottom:60px;
 `
 export const ContainerHead = styled.h3`
-  padding-bottom:40px;
-  margin: 58px 0 48px 0;
-    font-size: 28px;
-    margin-bottom: 30px !important;
-    margin-top: 70px !important;
-    text-align: center;
+  text-align:center;
+    font-size:50px;
+    font-weight:500;
+    padding-top:40px;
+    color:black;
+    padding-bottom:40px;
     border-bottom: 1px solid #e0e0e0;
     width: 100%;
+    
 
 `
 export const Buttonleft = styled.button`

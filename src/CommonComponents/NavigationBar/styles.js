@@ -32,6 +32,7 @@ export const navBar_container  = styled.div`
         display:block;
         position:sticky;
         top:0px;
+        margin-bottom:20px;
     }
 `
 
@@ -79,6 +80,7 @@ export const mobile_nav = styled.div `
         margin-top:20px;
         height:58px;
         z-index:80000;
+        padding-bottom:40px;
     }
 `
 

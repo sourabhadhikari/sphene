@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 export const title = styled.p `
     text-align:center;
-    font-size:34px;
+    font-size:50px;
+    font-weight:500;
+    margin-top:150px;
     
 
 `
