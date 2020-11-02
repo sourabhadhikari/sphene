@@ -59,6 +59,9 @@ export const cards = styled.div `
         width:30%;
         height:220px;
     }
+    @media (max-width:480px){
+        min-width:0px;
+    }
     &:hover{
         background-color:${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
     }
