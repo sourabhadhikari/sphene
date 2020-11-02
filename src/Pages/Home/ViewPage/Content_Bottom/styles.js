@@ -17,7 +17,7 @@ export const slider = styled.div `
     background-position:top;
     background-repeat:no-repeat;
     background-size:cover;
-    padding-bottom:200px;
+    /* padding-bottom:200px; */
     /* filter:brightness(50%) */
     
 `
@@ -28,6 +28,9 @@ export const slide = styled.div `
     margin-top:auto;
     margin-bottom:auto;
     padding-top:120px;
+    @media (max-width:480px){
+        padding-bottom:70px;
+    }
 `
 export const arrow = styled.div `
   
@@ -37,6 +40,9 @@ export const title = styled.div `
     color:#333333;
     font-weight:bold;
     margin:0 15%;
+    @media (max-width:480px){
+        font-size:35px;
+    }
   `
 export const images = styled.img `
     max-height:800px;

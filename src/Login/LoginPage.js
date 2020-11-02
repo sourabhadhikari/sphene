@@ -37,10 +37,10 @@ const LoginPage = (props) =>{
                     {hasAccount ?  (<></>):(<styles.input placeholder="username" type="text" autoFocus required value ={userName} onChange={e=>setUserName(e.target.value)} />) }
                     {/* <styles.label>Email</styles.label>            */}
                     <styles.input placeholder="email" type="text" autoFocus required value={email} onChange={e=>setEmail(e.target.value)}/>
-                    <p>{emailError}</p>
+                    <styles.p>{emailError}</styles.p>
                     {/* <styles.label>Password</styles.label>             */}
                     <styles.input placeholder="password" type="password" autoFocus required value={password} onChange={e=>setPassword(e.target.value)}/>
-                    <p>{passwordError}</p>
+                    <styles.p>{passwordError}</styles.p>
                     <div>
                         {hasAccount ? (
                             <>

@@ -20,6 +20,9 @@ export const title = styled.p `
         font-size:76px;
         padding-top:450px;
     }
+    @media (max-width:480px){
+        padding-top:270px;
+    }
 `
 
 export const content = styled.div `

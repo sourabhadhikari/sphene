@@ -115,6 +115,9 @@ export const slide = styled.div `
     margin-top:auto;
     margin-bottom:auto;
     padding-top:170px;
+    @media (max-width:480px){
+        padding-bottom:70px;
+    }
 `
 export const arrow = styled.div `
   
@@ -124,6 +127,9 @@ export const title = styled.div `
     color:white;
     font-weight:bold;
     margin:0 15%;
+    @media (max-width:480px){
+        font-size:35px;
+    }
     
 `
 //carousel

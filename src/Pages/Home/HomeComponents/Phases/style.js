@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Card = styled.div`
     width:100%;
     height:100%;
-    @media (max-width:380px){
+    @media (max-width:480px){
         display:none;
     }
 `
@@ -14,7 +14,7 @@ export const title = styled.p `
     
     color:black;
     margin-bottom:80px;
-    @media (max-width:380px){
+    @media (max-width:480px){
         display:none;
     }
 

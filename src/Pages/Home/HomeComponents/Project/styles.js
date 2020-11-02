@@ -63,6 +63,12 @@ export const button = styled.button `
         cursor: pointer;
         color:white;
     }
+    &:focus{
+    background: ${localStorage.getItem('Theme')?localStorage.getItem('Theme'):'#4fb77a'};
+    color: white;
+    border:none;
+    outline:none;
+}
     
 `
 export const search = styled.input `

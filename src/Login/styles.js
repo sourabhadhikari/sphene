@@ -134,3 +134,9 @@ export const header = styled.div `
     padding-bottom:60px;
 
 `
+export const p = styled.p `
+    color:red;
+    width:59%;
+    margin-left:auto;
+    margin-right:auto;
+`
